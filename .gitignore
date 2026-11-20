@@ -1,0 +1,13 @@
+# Local Python environment
+.venv/
+__pycache__/
+
+# Streamlit agent skills (symlinks into the local environment)
+.agents/skills/developing-with-streamlit
+.claude/skills/developing-with-streamlit
+
+# Design working files and prototypes
+.taste-skill/
+proto/
+
+.DS_Store
