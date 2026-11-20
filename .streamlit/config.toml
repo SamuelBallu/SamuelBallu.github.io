@@ -1,5 +1,4 @@
-# Look of the site: one teal on paper, Anton for the big words, Work Sans to read.
-# The browser version (stlite) loads this same file.
+# Streamlit's standard look, in teal: only the colours are changed.
 
 [client]
 toolbarMode = "minimal"
@@ -14,31 +13,6 @@ backgroundColor = "#f7f9f8"
 secondaryBackgroundColor = "#ebf0ee"
 textColor = "#06525c"
 linkColor = "#06525c"
-borderColor = "#06525c"
 
-# First colour for jobs, second for studies on the timeline.
-chartCategoricalColors = ["#06525c", "#9bbcc0"]
-
-font = "Work Sans"
-headingFont = "Anton"
-# Keep 16: stlite ignores another base size, and the two versions would differ.
-baseFontSize = 16
-
-# h1 the name, h2 section headings, h3 the one big figure, h4 names inside a section.
-headingFontSizes = ["6.4rem", "2.6rem", "8.5rem", "1.85rem", "1.25rem", "1rem"]
-headingFontWeights = 400
-
-baseRadius = "none"
-buttonRadius = "none"
-
-# The two typefaces, from Google Fonts. They are declared as font files because
-# the shorter "Name:stylesheet-address" form crashes stlite 1.12.
-[[theme.fontFaces]]
-family = "Anton"
-url = "https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8CSKlv.woff2"
-weight = 400
-
-[[theme.fontFaces]]
-family = "Work Sans"
-url = "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2"
-weight = "400 600"
+# Timeline colours: work, study, next step.
+chartCategoricalColors = ["#06525c", "#9bbcc0", "#d3e3e5"]

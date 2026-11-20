@@ -1,6 +1,6 @@
 # samuelballu.github.io
 
-My personal site: who I am, my experience, my projects and my CV. It is one
+My personal site: who I am, my experience, my projects and my CV. It is one plain
 Streamlit page written in Python, served by GitHub Pages and run in the
 visitor's browser by [stlite](https://github.com/whitphx/stlite).
 
@@ -9,7 +9,7 @@ visitor's browser by [stlite](https://github.com/whitphx/stlite).
 - `streamlit_app.py`: the page.
 - `content.py`: the facts: text, numbers, jobs, degrees, projects and links.
   Section headings and button labels sit with the layout in `streamlit_app.py`.
-- `.streamlit/config.toml`: colours and typefaces.
+- `.streamlit/config.toml`: the colours (everything else is Streamlit's default look).
 - `assets/`: the portrait, the project pictures and the CV.
 - `build.py`: writes `index.html`, the file GitHub Pages serves.
 - `Projet/`: reports of my earlier projects, linked from the page.

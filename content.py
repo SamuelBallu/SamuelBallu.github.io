@@ -1,8 +1,8 @@
 """The facts the site shows.
 
 Edit this file to update the site: the text, the numbers, the jobs, the
-degrees, the projects and the links. Section headings and button labels sit
-with the layout in streamlit_app.py.
+degrees, the projects and the links. Tab names and button labels sit with
+the layout in streamlit_app.py.
 """
 
 SITE_URL = "https://samuelballu.github.io/"
@@ -23,19 +23,12 @@ SEEKING = (
     "pre-sales or data science. Available with three months’ notice."
 )
 
-# The figure that owns a screen, then the three that answer it.
-MAIN_FIGURE = {
-    "claim": "Picked by Airbus",
-    "figure": "Top 5",
-    "caption": (
-        "Airbus picked the LLM assistant I started alone as one of its "
-        "top 5 AI projects to accelerate."
-    ),
-}
-OTHER_FIGURES = [
-    ("5", "people on that project’s team. I run the sprints and stand-ups and write the client reports."),
-    ("20+", "managers use the assembly-line app I built alone, more than 10 of them every day."),
-    ("4", "calls for tender answered with the sales team, with demos to clients."),
+# The key figures at the top of the page: label, value, detail shown on hover.
+METRICS = [
+    ("Airbus AI projects", "Top 5", "Airbus picked the LLM assistant I started alone as one of its top 5 AI projects to accelerate."),
+    ("Team I coordinate", "5", "I run the sprints and stand-ups and write the client reports."),
+    ("Managers on my app", "20+", "They use the assembly-line app I built alone, more than 10 of them every day."),
+    ("Calls for tender", "4", "Answered with the sales team, with demos to clients."),
 ]
 
 ABOUT = [
@@ -146,12 +139,10 @@ EDUCATION = [
     },
 ]
 
-# The last bar of the timeline: what comes next.
-NEXT_STEP = {
-    "timeline": "Next: a V.I.E.",
-    "what": "AI project or product management, pre-sales or data science",
-    "when": "Three months’ notice",
-}
+# The top bar of the timeline: what comes next.
+NEXT_STEP = "Next: a V.I.E."
+
+REPORTS = SITE_URL + "Projet/"
 
 PROJECTS = [
     {
@@ -184,31 +175,25 @@ PROJECTS = [
         "cover_alt": "Chart of Anakin’s dark-side score rising across the three prequel films",
     },
     {
-        "name": "Golf String",
-        "year": "2026",
-        "fact": "Product website",
+        "name": "Craft beer cellar around Rennes",
+        "year": "2024",
+        "fact": "R, spatial statistics",
         "what": (
-            "Website of a golf training product: a ball on an elastic string, so a "
-            "garden becomes a driving range."
+            "Where should a craft beer cellar open around Rennes? From the French "
+            "business register (SIRENE) and census data by district (IRIS), I mapped "
+            "the density of beer shops, modeled it against income, drew travel-time "
+            "zones to measure competition and tested spatial autocorrelation. A "
+            "master’s project."
         ),
-        "link": "https://samuelballu.github.io/GolfString/",
-        "link_label": "Visit the site",
-        "cover": "project_golfstring.jpg",
-        "cover_alt": "Home page of the Golf String website, a golf ball on a pink string",
+        "link": REPORTS + "Projet_cave_final.html",
+        "link_label": "Read the report (in French)",
+        "cover": "project_cave.png",
+        "cover_alt": "Two maps of Rennes from the report: density of beer shops and the graph of neighbouring districts",
     },
 ]
 
-REPORTS = SITE_URL + "Projet/"
-
 EARLIER_NOTE = "Projects from my degrees. Each name opens its report, written in French, some of them in pairs."
 EARLIER = [
-    {
-        "name": "Craft beer cellar around Rennes",
-        "what": "Where to open a craft beer cellar, from business register and census data",
-        "method": "Spatial statistics",
-        "tool": "R",
-        "file": "Projet_cave_final.html",
-    },
     {
         "name": "Survival of lung cancer patients",
         "what": "Classic survival models against support vector machines",
